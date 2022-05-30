@@ -1,0 +1,56 @@
+{
+  "appName":" My Trello Clone",
+  "views": {
+    "login": {
+      "login": "Login",
+      "loginSuccess": "Logged in successfully",
+      "loginFailure": "Your username or password is incorrect"
+    },
+    "logout": {
+      "title": "Logout",
+      "loggingOut": "Logging out",
+      "loggedOut": "Logged out successfully"
+    },
+    "signUp": {
+      "signUp": "Sign Up",
+      "signUpSuccessMessage": "You have signed up successfully you can login now"
+    },
+    "dashboard": {
+      "loading": "Loading..."
+    },
+    "boards":{
+      "addBoard": "Add a board...",
+      "boardCreated": "Board created successfully",
+      "boardNotCreated": "Oops!, Board not created",
+      "boardDeleted": "Board deleted successfully",
+      "boardNotDeleted": "Oops!, Board not deleted",
+      "loadingBoards": "Loading Boards...",
+      "deleteMessage": "Delete board"
+    },
+    "lists": {
+      "addLists": "Add a list...",
+      "listCreated": "List created successfully",
+      "listNotCreated": "Oops!, Lists not created",
+      "listDeleted": "List deleted successfully",
+      "listNotUpdated": "Oops!, Lists not updated",
+      "listUpdated": "List updated successfully",
+      "listNotDeleted": "Oops!, List not deleted",
+      "bgColor": "BACKGROUND COLOR",
+      "bgColorMessage": "Change cards background color",
+      "deleteCard": "DELETE CARD",
+      "deleteMessage": "Delete list"
+    },
+    "cards":{
+      "addCard": "Add a card...",
+      "cardCreated": "Card created successfully",
+      "cardNotCreated": "Oops!, Card not created",
+      "cardDeleted": "Card deleted successfully",
+      "cardNotDeleted": "Oops!, Card not deleted",
+      "deleteMessage": "Delete card",
+      "createCardMessage": "Create card",
+      "editMessage": "Edit card",
+      "editCard": "EDIT CARD"
+    }
+  }
+}
+  

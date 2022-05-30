@@ -1,0 +1,34 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 500,
+    "max": 1000
+  },
+  "authentication": {
+    "secret": "eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJ1c2VySWQiOiI2MjhjZGFhMDZhMDdmYzllYTA1MWZjZGEiLCJ1c2VyIjp7Il9pZCI6IjYyOGNkYWEwNmEwN2ZjOWVhMDUxZmNkYSIsInVzZXJuYW1lIjoic2FuamF5IiwiZGlzcGxheU5hbWUiOiJzYW5qYXkiLCJpbWFnZVVybCI6Imh0dHBzOi8vaW1hZ2Uuc2h1dHRlcnN0b2NrLmNvbS9pbWFnZS1waG90by9sYXMtdmVnYXMtbnYtdXNhLXNlcC0yNjBudy03MjEyMTU2MjguanBnIiwiZW1haWwiOiJzYW5qYXkuaW1zLmluQGdtYWlsLmNvbSIsImNyZWF0ZWRBdCI6IjIwMjItMDUtMjRUMTM6MTY6MTYuMzM1WiIsInVwZGF0ZWRBdCI6IjIwMjItMDUtMjRUMTM6MTY6MTYuMzM1WiIsIl9fdiI6MH0sImlhdCI6MTY1MzcyMDAxMywiZXhwIjoxNjU0MzI0ODEzLCJhdWQiOiJodHRwczovL3lvdXJkb21haW4uY29tIiwiaXNzIjoiZmVhdGhlcnMiLCJzdWIiOiJhdXRoIiwianRpIjoiZWNlMzllYmEtNGM0Zi00YjAxLWI4NzQtNmM1MDQzYTFjNmE4In0.VFdjUN9KxQwX-agNsZiwYSFVxRZmj4tct8MS10iQorU",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "auth",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1w"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "\\username",
+      "passwordField": "password"
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/server"
+}
